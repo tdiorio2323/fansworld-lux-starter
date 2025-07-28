@@ -88,7 +88,7 @@ export default function Auth() {
       <div className="w-full max-w-lg relative z-10">
         <div className="text-center mb-16">
           {/* Large Cabana Script Title */}
-          <h1 className="mb-8 text-gradient" style={{
+          <h1 className="mb-8 text-holographic" style={{
             fontSize: '7rem',
             fontFamily: '"Dancing Script", cursive',
             fontWeight: '600',
@@ -225,7 +225,7 @@ export default function Auth() {
 
               <Button 
                 type="submit" 
-                className="w-full btn-luxury hover:scale-105 transition-all h-12 text-base font-medium"
+                className="w-full btn-cyber-chrome hover:scale-105 transition-all h-12 text-base font-medium"
               >
                 {isSignUp ? 'Create Account' : 'Sign In'}
               </Button>

@@ -112,7 +112,7 @@ export default function Navbar() {
           </div>
           
           <div className="flex items-center flex-shrink-0 px-6 pt-8 pb-6 relative z-10">
-            <div className="text-3xl font-luxury font-bold text-gradient">Cabana</div>
+            <div className="text-3xl font-luxury font-bold text-holographic">Cabana</div>
           </div>
           
           <div className="flex items-center justify-between px-6 py-4 border-b border-border/40">
@@ -121,7 +121,7 @@ export default function Navbar() {
                 {user.email?.charAt(0).toUpperCase()}
               </div>
               <div>
-                <div className="font-semibold text-gradient">{user.user_metadata?.display_name || 'User'}</div>
+                <div className="font-semibold text-aurora">{user.user_metadata?.display_name || 'User'}</div>
                 <div className="text-sm text-muted-foreground">@{user.user_metadata?.username || 'user'}</div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Navbar() {
               
               {user.user_metadata?.role === 'creator' && (
                 <Button
-                  className="btn-luxury mt-8 flex items-center justify-center gap-3 text-base w-full"
+                  className="btn-holographic mt-8 flex items-center justify-center gap-3 text-base w-full"
                 >
                   <Plus className="w-5 h-5" />
                   New Post
@@ -212,7 +212,7 @@ export default function Navbar() {
       {/* Mobile Header */}
       <div className="lg:hidden">
         <div className="flex items-center justify-between h-18 px-6 glass-morphism border-b border-border/60 backdrop-blur-3xl">
-          <div className="text-2xl font-luxury font-bold text-gradient">Cabana</div>
+          <div className="text-2xl font-luxury font-bold text-holographic">Cabana</div>
           
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon">

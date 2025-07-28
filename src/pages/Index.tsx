@@ -42,7 +42,7 @@ function Index() {
           <div className="text-center space-y-8">
             <div className="flex items-center justify-center mb-8">
               <Sparkles className="h-12 w-12 text-primary mr-4 animate-pulse" />
-              <h1 className="text-6xl font-luxury font-bold text-gradient">Cabana</h1>
+              <h1 className="text-6xl font-luxury font-bold text-holographic">Cabana</h1>
             </div>
             
             <div className="max-w-3xl mx-auto space-y-6">

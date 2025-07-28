@@ -173,7 +173,7 @@ export default function Dashboard() {
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
             <div>
-              <h1 className="text-3xl font-bold text-luxury mb-2">Creator Dashboard</h1>
+              <h1 className="text-3xl font-bold text-holographic mb-2">Creator Dashboard</h1>
               <p className="text-muted-foreground">
                 Welcome back! Here's how your content is performing.
               </p>
@@ -214,13 +214,13 @@ export default function Dashboard() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <Card className="card-luxury">
+                <Card className="card-crystal">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Total Earnings</CardTitle>
                     <DollarSign className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-luxury">
+                    <div className="text-2xl font-bold text-aurora">
                       {formatCurrency(stats.totalEarnings)}
                     </div>
                     <p className="text-xs text-green-500">
@@ -229,13 +229,13 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
 
-                <Card className="card-luxury">
+                <Card className="card-liquid-chrome">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Subscribers</CardTitle>
                     <Users className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-luxury">
+                    <div className="text-2xl font-bold text-champagne">
                       {stats.subscribers.toLocaleString()}
                     </div>
                     <p className="text-xs text-green-500">
@@ -244,13 +244,13 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
 
-                <Card className="card-luxury">
+                <Card className="card-glass">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Total Views</CardTitle>
                     <Eye className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-luxury">
+                    <div className="text-2xl font-bold text-holographic">
                       {stats.totalViews > 0 ? (stats.totalViews / 1000000).toFixed(1) + 'M' : '0'}
                     </div>
                     <p className="text-xs text-muted-foreground">
@@ -259,13 +259,13 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
 
-                <Card className="card-luxury">
+                <Card className="card-chrome-luxury">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Content Posts</CardTitle>
                     <Camera className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-luxury">
+                    <div className="text-2xl font-bold text-chrome">
                       {stats.totalPosts}
                     </div>
                     <p className="text-xs text-green-500">
@@ -301,7 +301,7 @@ export default function Dashboard() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Recent Earnings */}
-            <Card className="card-luxury">
+            <Card className="card-glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-primary" />
@@ -350,7 +350,7 @@ export default function Dashboard() {
             </Card>
 
             {/* Top Performing Content */}
-            <Card className="card-luxury">
+            <Card className="card-crystal">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-primary" />
@@ -434,7 +434,7 @@ export default function Dashboard() {
           </div>
 
           {/* Subscription Stats */}
-          <Card className="card-luxury mt-8">
+          <Card className="card-liquid-chrome mt-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-primary" />
@@ -451,14 +451,14 @@ export default function Dashboard() {
                     {loading ? (
                       <div className="animate-pulse h-8 bg-muted rounded w-24 mx-auto"></div>
                     ) : (
-                      stats.subscribers.toLocaleString()
+                      <span className="text-holographic">{stats.subscribers.toLocaleString()}</span>
                     )}
                   </div>
                   <p className="text-sm text-muted-foreground">Total Subscribers</p>
                 </div>
                 
                 <div className="text-center p-6 bg-secondary/20 rounded-2xl">
-                  <div className="text-3xl font-bold text-green-500 mb-2">
+                  <div className="text-3xl font-bold text-aurora mb-2">
                     {loading ? (
                       <div className="animate-pulse h-8 bg-muted rounded w-16 mx-auto"></div>
                     ) : (
@@ -469,7 +469,7 @@ export default function Dashboard() {
                 </div>
                 
                 <div className="text-center p-6 bg-secondary/20 rounded-2xl">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">
+                  <div className="text-3xl font-bold text-champagne mb-2">
                     {loading ? (
                       <div className="animate-pulse h-8 bg-muted rounded w-12 mx-auto"></div>
                     ) : (
