@@ -142,11 +142,11 @@ export default function Home() {
               </div>
               
               <div className="animate-fade-up flex flex-col sm:flex-row gap-6 justify-center items-center mb-16" style={{ animationDelay: '0.4s' }}>
-                <Button size="lg" className="btn-liquid-metal text-lg px-12 py-5 text-white font-semibold">
+                <Button size="lg" className="btn-luxury text-lg px-12 py-5 text-white font-semibold">
                   Start Exploring
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
-                <Button variant="outline" size="lg" className="btn-chrome-mirror text-lg px-12 py-5 font-semibold">
+                <Button variant="outline" size="lg" className="btn-glass text-lg px-12 py-5 font-semibold">
                   Become a Creator
                 </Button>
               </div>
@@ -240,7 +240,7 @@ export default function Home() {
         </div>
 
         {/* CTA Section */}
-        <div className="px-4 py-20 sm:px-6 lg:px-8 bg-primary">
+        <div className="px-4 py-20 sm:px-6 lg:px-8 bg-gradient-luxury">
           <div className="text-center text-primary-foreground max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Join the Premium Experience?
@@ -249,10 +249,10 @@ export default function Home() {
               Start your journey today and discover exclusive content from the world's most talented creators.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+              <Button size="lg" className="btn-chrome text-lg px-8 py-3">
                 Sign Up Free
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" className="btn-glass text-lg px-8 py-3">
                 Learn More
               </Button>
             </div>

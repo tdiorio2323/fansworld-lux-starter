@@ -49,13 +49,13 @@ export function CreatorCard({
 
   return (
     <Link to={`/creator/${username}`} className={`block ${className}`}>
-      <div className="card-liquid-chrome hover:shadow-neon transition-all duration-300 group">
+      <div className="card-luxury hover:shadow-glow transition-all duration-300 group">
         {/* Header with Avatar and Badges */}
         <div className="flex items-start gap-4 mb-4">
-          <div className="relative creator-avatar-chrome">
+          <div className="relative">
             <Avatar className="w-16 h-16">
               <AvatarImage src={avatar} alt={displayName} />
-              <AvatarFallback className="bg-gradient-cyber-chrome text-white text-lg font-bold">
+              <AvatarFallback className="bg-gradient-primary text-white text-lg font-bold">
                 {displayName[0]?.toUpperCase()}
               </AvatarFallback>
             </Avatar>
@@ -69,9 +69,9 @@ export function CreatorCard({
           
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
-              <h3 className="font-bold text-lg truncate text-holographic">{displayName}</h3>
+              <h3 className="font-bold text-lg truncate text-gradient">{displayName}</h3>
               {isVerified && (
-                <Verified className="w-5 h-5 text-holo-blue flex-shrink-0 drop-shadow-sm" />
+                <Verified className="w-5 h-5 text-primary flex-shrink-0 drop-shadow-sm" />
               )}
             </div>
             
@@ -79,7 +79,7 @@ export function CreatorCard({
             
             <div className="flex flex-wrap gap-2 mb-3">
               {isPremium && (
-                <Badge variant="outline" className="text-champagne border-holo-gold/40 bg-gradient-champagne/10">
+                <Badge variant="outline" className="text-accent border-accent/40 bg-accent/10">
                   Premium
                 </Badge>
               )}
@@ -104,7 +104,7 @@ export function CreatorCard({
             variant={following ? "secondary" : "outline"}
             size="sm"
             onClick={handleFollow}
-            className={`flex-1 ${following ? 'btn-chrome-mirror' : 'btn-glass hover:shadow-neon'}`}
+            className={`flex-1 ${following ? 'btn-chrome' : 'btn-glass hover:shadow-glow'}`}
           >
             <UserPlus className="w-4 h-4 mr-2" />
             {following ? 'Following' : 'Follow'}
@@ -115,7 +115,7 @@ export function CreatorCard({
               variant="default"
               size="sm"
               onClick={handleSubscribe}
-              className="flex-1 btn-cyber-chrome"
+              className="flex-1 btn-luxury"
             >
               <Heart className="w-4 h-4 mr-2 fill-current" />
               Subscribed
@@ -125,7 +125,7 @@ export function CreatorCard({
               variant="default"
               size="sm"
               onClick={handleSubscribe}
-              className="flex-1 btn-liquid-metal"
+              className="flex-1 btn-chrome"
             >
               Subscribe ${subscriptionPrice}/mo
             </Button>
@@ -133,7 +133,7 @@ export function CreatorCard({
         </div>
 
         {/* Hover Effect Overlay */}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-crystal opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
+        <div className="absolute inset-0 rounded-3xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
       </div>
     </Link>
   );

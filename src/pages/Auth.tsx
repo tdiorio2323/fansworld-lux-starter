@@ -88,11 +88,10 @@ export default function Auth() {
       <div className="w-full max-w-lg relative z-10">
         <div className="text-center mb-16">
           {/* Large Cabana Script Title */}
-          <h1 className="mb-8" style={{
+          <h1 className="mb-8 text-gradient" style={{
             fontSize: '7rem',
             fontFamily: '"Dancing Script", cursive',
             fontWeight: '600',
-            color: 'white',
             textShadow: '0 8px 32px rgba(0, 0, 0, 0.9), 0 4px 16px rgba(255, 255, 255, 0.4), 0 2px 8px rgba(0, 0, 0, 0.6)',
             letterSpacing: '1px',
             lineHeight: '0.9'
@@ -104,18 +103,10 @@ export default function Auth() {
           </p>
         </div>
 
-        <Card className="p-6 border border-white/20 shadow-2xl" style={{
-          background: 'rgba(255, 255, 255, 0.1)',
-          backdropFilter: 'blur(20px)',
-          borderRadius: '24px'
-        }}>
+        <Card className="card-glass p-6 border border-white/20 shadow-2xl">
           <CardHeader className="pb-6">
             <Tabs value={isSignUp ? 'signup' : 'signin'} onValueChange={(value) => setIsSignUp(value === 'signup')}>
-              <TabsList className="grid w-full grid-cols-2 h-12" style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
-              }}>
+              <TabsList className="grid w-full grid-cols-2 h-12 glass-morphism">
                 <TabsTrigger value="signin" className="text-base text-white data-[state=active]:bg-white/20 data-[state=active]:text-white">Sign In</TabsTrigger>
                 <TabsTrigger value="signup" className="text-base text-white data-[state=active]:bg-white/20 data-[state=active]:text-white">Sign Up</TabsTrigger>
               </TabsList>
@@ -234,13 +225,7 @@ export default function Auth() {
 
               <Button 
                 type="submit" 
-                className="w-full hover:scale-105 transition-all h-12 text-base font-medium text-white"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.2)',
-                  backdropFilter: 'blur(15px)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
-                  borderRadius: '12px'
-                }}
+                className="w-full btn-luxury hover:scale-105 transition-all h-12 text-base font-medium"
               >
                 {isSignUp ? 'Create Account' : 'Sign In'}
               </Button>
@@ -252,7 +237,7 @@ export default function Auth() {
                   <span className="w-full border-t border-white/10" />
                 </div>
                 <div className="relative flex justify-center text-xs uppercase">
-                  <span className="px-2 text-white/80" style={{ background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', borderRadius: '8px' }}>Or continue with</span>
+                  <span className="px-2 text-white/80 glass-morphism rounded-lg">Or continue with</span>
                 </div>
               </div>
 

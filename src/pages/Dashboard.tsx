@@ -173,14 +173,14 @@ export default function Dashboard() {
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
             <div>
-              <h1 className="text-3xl font-bold text-gradient mb-2">Creator Dashboard</h1>
+              <h1 className="text-3xl font-bold text-luxury mb-2">Creator Dashboard</h1>
               <p className="text-muted-foreground">
                 Welcome back! Here's how your content is performing.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-0">
-              <Button className="btn-glass">
+              <Button className="btn-chrome">
                 <BarChart3 className="w-4 h-4 mr-2" />
                 Analytics
               </Button>
@@ -217,10 +217,10 @@ export default function Dashboard() {
                 <Card className="card-luxury">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Total Earnings</CardTitle>
-                    <DollarSign className="w-4 h-4 text-primary" />
+                    <DollarSign className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-gradient">
+                    <div className="text-2xl font-bold text-luxury">
                       {formatCurrency(stats.totalEarnings)}
                     </div>
                     <p className="text-xs text-green-500">
@@ -232,10 +232,10 @@ export default function Dashboard() {
                 <Card className="card-luxury">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Subscribers</CardTitle>
-                    <Users className="w-4 h-4 text-primary" />
+                    <Users className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-gradient">
+                    <div className="text-2xl font-bold text-luxury">
                       {stats.subscribers.toLocaleString()}
                     </div>
                     <p className="text-xs text-green-500">
@@ -247,10 +247,10 @@ export default function Dashboard() {
                 <Card className="card-luxury">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Total Views</CardTitle>
-                    <Eye className="w-4 h-4 text-primary" />
+                    <Eye className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-gradient">
+                    <div className="text-2xl font-bold text-luxury">
                       {stats.totalViews > 0 ? (stats.totalViews / 1000000).toFixed(1) + 'M' : '0'}
                     </div>
                     <p className="text-xs text-muted-foreground">
@@ -262,10 +262,10 @@ export default function Dashboard() {
                 <Card className="card-luxury">
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">Content Posts</CardTitle>
-                    <Camera className="w-4 h-4 text-primary" />
+                    <Camera className="w-4 h-4 text-accent" />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-gradient">
+                    <div className="text-2xl font-bold text-luxury">
                       {stats.totalPosts}
                     </div>
                     <p className="text-xs text-green-500">
